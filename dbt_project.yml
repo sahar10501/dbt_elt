@@ -58,5 +58,3 @@ models:
         +tags: airbyte_internal_views
         +materialized: view
 
-vars:
-  dbt_utils_dispatch_list: ['airbyte_utils']
