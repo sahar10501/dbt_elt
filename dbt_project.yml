@@ -57,6 +57,10 @@ models:
       airbyte_views:
         +tags: airbyte_internal_views
         +materialized: view
-        
+  datamart:
+    +schema: datamart
+    +materialized: table
+
+
 vars:
   dbt_utils_dispatch_list: ['airbyte_utils']
