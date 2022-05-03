@@ -29,6 +29,7 @@ modules-path: "../dbt_modules"  # directory which will store external DBT depend
 clean-targets:         # directories to be removed by `dbt clean`
     - "build"
     - "dbt_modules"
+# Testing the test
 
 quoting:
   database: true
@@ -57,9 +58,7 @@ models:
       airbyte_views:
         +tags: airbyte_internal_views
         +materialized: view
-  datamart:
-    +schema: datamart
-    +materialized: table
+
 
 
 vars:
